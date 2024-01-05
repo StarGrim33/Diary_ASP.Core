@@ -2,11 +2,11 @@
 
 namespace FonTech.Api.Controllers
 {
-    public class ReportController : ControllerBase
+    public class ReportController : Controller
     {
         public IActionResult Index()
         {
-            return null;
+            return View();
         }
     }
 }
