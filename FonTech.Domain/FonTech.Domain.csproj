@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Dto\" />
     <Folder Include="Enum\" />
+    <Folder Include="Interfaces\Services\" />
     <Folder Include="Settings\" />
     <Folder Include="Result\" />
   </ItemGroup>

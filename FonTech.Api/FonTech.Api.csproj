@@ -13,4 +13,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FonTech.DAL\FonTech.DAL.csproj" />
+    <ProjectReference Include="..\FonTech.Domain\FonTech.Domain.csproj" />
+    <ProjectReference Include="..\FonTech\FonTech.csproj" />
+  </ItemGroup>
+
 </Project>

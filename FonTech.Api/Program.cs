@@ -1,3 +1,4 @@
+using FonTech.DAL.DependencyInjection;
 
 namespace FonTech.Api
 {
@@ -10,6 +11,7 @@ namespace FonTech.Api
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddDataAccessLayer(builder.Configuration);
 
             var app = builder.Build();
 
