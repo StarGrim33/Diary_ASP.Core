@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FonTech.Api", "..\FonTech.A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FonTech.Domain", "..\FonTech.Domain\FonTech.Domain.csproj", "{B3EF0823-D113-4BD1-86AE-96CF62D57882}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FonTech.DAL", "..\FonTech.DAL\FonTech.DAL.csproj", "{7F4D6E20-EC1C-4718-BD3F-62709A2EE508}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FonTech.DAL", "..\FonTech.DAL\FonTech.DAL.csproj", "{7F4D6E20-EC1C-4718-BD3F-62709A2EE508}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FonTech.Application", "..\FonTech.Application\FonTech.Application.csproj", "{DEDADDE2-3052-47A9-9722-F2EDCA8E8C9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7F4D6E20-EC1C-4718-BD3F-62709A2EE508}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F4D6E20-EC1C-4718-BD3F-62709A2EE508}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F4D6E20-EC1C-4718-BD3F-62709A2EE508}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEDADDE2-3052-47A9-9722-F2EDCA8E8C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEDADDE2-3052-47A9-9722-F2EDCA8E8C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEDADDE2-3052-47A9-9722-F2EDCA8E8C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEDADDE2-3052-47A9-9722-F2EDCA8E8C9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{CC0501B9-FD07-414F-8080-527D8FE89DEC} = {AEF5A71E-C41E-46B1-95FC-5D2674BFF877}
 		{B3EF0823-D113-4BD1-86AE-96CF62D57882} = {CDD8F0E7-5087-4382-B77A-9D783F41378E}
 		{7F4D6E20-EC1C-4718-BD3F-62709A2EE508} = {0ABDA5C9-70E6-4F0B-AB99-1D437A08EC06}
+		{DEDADDE2-3052-47A9-9722-F2EDCA8E8C9C} = {CDD8F0E7-5087-4382-B77A-9D783F41378E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AB2019A5-A39B-4348-A30E-8F4CE276D0AF}

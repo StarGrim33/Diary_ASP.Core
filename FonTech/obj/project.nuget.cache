@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qk209Obm9frI7HeVx/OGM0G0+MvJfwnji8zaB7hUr75JuwvFsy8KRuITtmhhCcl1qehJfXuKYVTkhKD0uV4izA==",
+  "dgSpecHash": "dMNhfWCIMAD+J2rSPBvMif/kMBSWsXw/tcF1oT6WH47y/d2xWhpVLKXg/tyVmVr8pFb0rUa6TQ7GLjBUfNaiTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech\\FonTech.csproj",
+  "projectFilePath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech\\FonTech.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\prosk\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
+    "C:\\Users\\Влад и Аня\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
   ],
   "logs": []
 }
