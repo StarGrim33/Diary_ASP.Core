@@ -1,4 +1,4 @@
-﻿using FonTech.Domain.Dto;
+﻿using FonTech.Domain.Dto.Report;
 using FonTech.Domain.Result;
 
 namespace FonTech.Domain.Interfaces.Services
@@ -14,5 +14,33 @@ namespace FonTech.Domain.Interfaces.Services
         /// <param name="userId"></param>
         /// <returns></returns>
         Task<CollectionResult<ReportDto>> GetReportsAsync(long userId);
+
+        /// <summary>
+        /// Получение отчета по идентификатору
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task<BaseResult<ReportDto>> GetReportByIdAsync(long id);
+
+        /// <summary>
+        /// Создание отчета с базовыми параметрами
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        Task<BaseResult> CreateReportAsync(CreateReportDto dto);
+
+        /// <summary>
+        /// Удаление отчета по идентификатору
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task<BaseResult<ReportDto>> DeleteReportAsync(long id);
+
+        /// <summary>
+        /// Обновление отчета
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        Task<BaseResult<ReportDto>> UpdateReportAsync(UpdateReportDto dto);
     }
 }
