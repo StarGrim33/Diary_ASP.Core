@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "xtafFGs8rQnmsZPRD34fHpTMH+8um5oghT/n63CiFNc=",
+  "Source": "FonTech.Api",
+  "BasePath": "_content/FonTech.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech\\FonTech.csproj",
+      "Version": 2,
+      "Source": "FonTech",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
