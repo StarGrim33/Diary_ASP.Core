@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Api\\FonTech.Api.csproj": {}
+    "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Api\\FonTech.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Api\\FonTech.Api.csproj": {
+    "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Api\\FonTech.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Api\\FonTech.Api.csproj",
+        "projectUniqueName": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Api\\FonTech.Api.csproj",
         "projectName": "FonTech.Api",
-        "projectPath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Api\\FonTech.Api.csproj",
-        "packagesPath": "C:\\Users\\Влад и Аня\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Api\\obj\\",
+        "projectPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Api\\FonTech.Api.csproj",
+        "packagesPath": "C:\\Users\\prosk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Влад и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prosk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,14 +32,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.DAL\\FonTech.DAL.csproj": {
-                "projectPath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.DAL\\FonTech.DAL.csproj"
+              "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Application\\FonTech.Application.csproj": {
+                "projectPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Application\\FonTech.Application.csproj"
               },
-              "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj": {
-                "projectPath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj"
+              "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.DAL\\FonTech.DAL.csproj": {
+                "projectPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.DAL\\FonTech.DAL.csproj"
               },
-              "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech\\FonTech.csproj": {
-                "projectPath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech\\FonTech.csproj"
+              "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj": {
+                "projectPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj"
+              },
+              "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech\\FonTech.csproj": {
+                "projectPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech\\FonTech.csproj"
               }
             }
           }
@@ -54,6 +57,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -82,20 +89,20 @@
         }
       }
     },
-    "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.DAL\\FonTech.DAL.csproj": {
+    "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Application\\FonTech.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.DAL\\FonTech.DAL.csproj",
-        "projectName": "FonTech.DAL",
-        "projectPath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.DAL\\FonTech.DAL.csproj",
-        "packagesPath": "C:\\Users\\Влад и Аня\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.DAL\\obj\\",
+        "projectUniqueName": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Application\\FonTech.Application.csproj",
+        "projectName": "FonTech.Application",
+        "projectPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Application\\FonTech.Application.csproj",
+        "packagesPath": "C:\\Users\\prosk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Влад и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prosk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -110,8 +117,93 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj": {
-                "projectPath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj"
+              "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj": {
+                "projectPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.DAL\\FonTech.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.DAL\\FonTech.DAL.csproj",
+        "projectName": "FonTech.DAL",
+        "projectPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.DAL\\FonTech.DAL.csproj",
+        "packagesPath": "C:\\Users\\prosk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\prosk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj": {
+                "projectPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj"
               }
             }
           }
@@ -159,20 +251,20 @@
         }
       }
     },
-    "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj": {
+    "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj",
         "projectName": "FonTech.Domain",
-        "projectPath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj",
-        "packagesPath": "C:\\Users\\Влад и Аня\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Domain\\obj\\",
+        "projectPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj",
+        "packagesPath": "C:\\Users\\prosk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Влад и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prosk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -218,20 +310,20 @@
         }
       }
     },
-    "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech\\FonTech.csproj": {
+    "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech\\FonTech.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech\\FonTech.csproj",
+        "projectUniqueName": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech\\FonTech.csproj",
         "projectName": "FonTech",
-        "projectPath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech\\FonTech.csproj",
-        "packagesPath": "C:\\Users\\Влад и Аня\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech\\obj\\",
+        "projectPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech\\FonTech.csproj",
+        "packagesPath": "C:\\Users\\prosk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Влад и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prosk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -261,6 +353,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [

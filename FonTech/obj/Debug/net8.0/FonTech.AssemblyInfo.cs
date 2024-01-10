@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FonTech")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b1547671f97533fc15ae30c72b0a5470bccd466")]
 [assembly: System.Reflection.AssemblyProductAttribute("FonTech")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FonTech")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

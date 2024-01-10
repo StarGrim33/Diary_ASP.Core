@@ -1,4 +1,6 @@
 using FonTech.DAL.DependencyInjection;
+using FonTech.Application.DependencyInjection;
+using Serilog;
 
 namespace FonTech.Api
 {
@@ -12,6 +14,9 @@ namespace FonTech.Api
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddDataAccessLayer(builder.Configuration);
+            builder.Services.AddApplication();
+            builder.Host.UseSerilog((context, configuration)
+                => configuration.ReadFrom.Configuration(context.Configuration));
 
             var app = builder.Build();
 
