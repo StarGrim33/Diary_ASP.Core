@@ -1,0 +1,13 @@
+C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\bin\Debug\net8.0\FonTech.Domain.deps.json
+C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\bin\Debug\net8.0\FonTech.Domain.dll
+C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\bin\Debug\net8.0\FonTech.Domain.pdb
+C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.csproj.AssemblyReference.cache
+C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.AssemblyInfoInputs.cache
+C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.AssemblyInfo.cs
+C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.csproj.CoreCompileInputs.cache
+C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.sourcelink.json
+C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.dll
+C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\refint\FonTech.Domain.dll
+C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.pdb
+C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\ref\FonTech.Domain.dll

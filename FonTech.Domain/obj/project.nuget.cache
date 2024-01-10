@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "3CUpJVmUBpPnfmUXrbC7ck3bVhPYDB8jcYApgy6FC5UqjpsFS57n64dC9D5YaPA8oKm5tT9doIU17wt5KcLu4g==",
+  "dgSpecHash": "KoCx355/AeN5W4B0hS2MGsdomIYw6b4V+4PLmiuVbYirkZW84QrNUsF6BS2NJtsKA4PM34QGLBq0qCebeLXSJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\prosk\\OneDrive\\Документы\\GitHub\\Diary_ASP.Core\\FonTech.Domain\\FonTech.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\prosk\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\prosk\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\prosk\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\prosk\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\prosk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\prosk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
   "logs": []
 }
