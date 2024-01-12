@@ -14,3 +14,19 @@ C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.DAL\obj
 C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\refint\FonTech.DAL.dll
 C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.pdb
 C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\ref\FonTech.DAL.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\bin\Debug\net8.0\FonTech.DAL.deps.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\bin\Debug\net8.0\FonTech.DAL.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\bin\Debug\net8.0\FonTech.DAL.pdb
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\bin\Debug\net8.0\FonTech.Domain.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\bin\Debug\net8.0\FonTech.Domain.pdb
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.csproj.AssemblyReference.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.AssemblyInfoInputs.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.AssemblyInfo.cs
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.sourcelink.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.csproj.CopyComplete
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\refint\FonTech.DAL.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.pdb
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\ref\FonTech.DAL.dll

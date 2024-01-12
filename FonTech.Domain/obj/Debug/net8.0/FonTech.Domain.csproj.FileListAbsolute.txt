@@ -11,3 +11,16 @@ C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\
 C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\refint\FonTech.Domain.dll
 C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.pdb
 C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\ref\FonTech.Domain.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Domain\bin\Debug\net8.0\FonTech.Domain.deps.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Domain\bin\Debug\net8.0\FonTech.Domain.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Domain\bin\Debug\net8.0\FonTech.Domain.pdb
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.csproj.AssemblyReference.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.AssemblyInfoInputs.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.AssemblyInfo.cs
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.sourcelink.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\refint\FonTech.Domain.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.pdb
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Domain\obj\Debug\net8.0\ref\FonTech.Domain.dll

@@ -6,7 +6,7 @@ namespace FonTech.Application.Mapping
 {
     public class ReportMapping : Profile
     {
-        public ReportMapping() 
+        public ReportMapping()
         {
             CreateMap<Report, ReportDto>().ReverseMap();
         }

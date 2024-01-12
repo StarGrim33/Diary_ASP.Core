@@ -13,11 +13,10 @@ namespace FonTech.Api
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddDataAccessLayer(builder.Configuration);
-            builder.Services.AddApplication();
             builder.Host.UseSerilog((context, configuration) => configuration
             .ReadFrom.Configuration(context.Configuration));
-
+            builder.Services.AddDataAccessLayer(builder.Configuration);
+            builder.Services.AddApplication();
 
             var app = builder.Build();
 
@@ -25,7 +24,6 @@ namespace FonTech.Api
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
-
             }
 
             app.UseHttpsRedirection();

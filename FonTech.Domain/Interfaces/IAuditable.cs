@@ -6,8 +6,8 @@
 
         public long CreatedBy { get; set; }
 
-        public DateTime LastModifiedAt { get; set; }
+        public DateTime? LastModifiedAt { get; set; }
 
-        public long UpdatedBy { get; set; }
+        public long? UpdatedBy { get; set; }
     }
 }
