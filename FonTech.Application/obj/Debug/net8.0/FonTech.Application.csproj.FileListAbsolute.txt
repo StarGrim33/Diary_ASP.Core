@@ -16,3 +16,21 @@ C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Applica
 C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\refint\FonTech.Application.dll
 C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\FonTech.Application.pdb
 C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\ref\FonTech.Application.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\bin\Debug\net8.0\FonTech.Application.deps.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\bin\Debug\net8.0\FonTech.Application.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\bin\Debug\net8.0\FonTech.Application.pdb
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\bin\Debug\net8.0\FonTech.Domain.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\bin\Debug\net8.0\FonTech.Domain.pdb
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\FonTech.Application.csproj.AssemblyReference.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\FonTech.Application.Resources.ErrorMessage.resources
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\FonTech.Application.csproj.GenerateResource.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\FonTech.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\FonTech.Application.AssemblyInfoInputs.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\FonTech.Application.AssemblyInfo.cs
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\FonTech.Application.csproj.CoreCompileInputs.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\FonTech.Application.sourcelink.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\FonTech.Application.csproj.CopyComplete
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\FonTech.Application.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\refint\FonTech.Application.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\FonTech.Application.pdb
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\ref\FonTech.Application.dll

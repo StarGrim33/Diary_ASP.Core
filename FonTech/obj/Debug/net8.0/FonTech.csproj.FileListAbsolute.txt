@@ -31,3 +31,36 @@ C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech\bin\Deb
 C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.csproj.AssemblyReference.cache
 C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.csproj.CopyComplete
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\appsettings.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\FonTech.exe
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\FonTech.deps.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\FonTech.runtimeconfig.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\FonTech.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\FonTech.pdb
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.csproj.AssemblyReference.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.AssemblyInfoInputs.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.AssemblyInfo.cs
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.csproj.CoreCompileInputs.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.sourcelink.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\staticwebassets\msbuild.FonTech.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\staticwebassets\msbuild.build.FonTech.props
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FonTech.props
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FonTech.props
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\scopedcss\bundle\FonTech.styles.css
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.csproj.CopyComplete
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\refint\FonTech.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.pdb
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.genruntimeconfig.cache
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\ref\FonTech.dll

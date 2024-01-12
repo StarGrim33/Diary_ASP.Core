@@ -7,6 +7,7 @@
     <InvariantGlobalization>true</InvariantGlobalization>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
     <DockerfileContext>..\FonTech</DockerfileContext>
+    <UserSecretsId>ae01ee09-cc29-4f1f-be61-d4aaa87d331c</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

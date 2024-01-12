@@ -20,12 +20,13 @@ namespace FonTech.Application.Services
         private readonly ILogger _logger;
         private readonly IMapper _mapper;
 
-        public ReportService(IBaseRepository<Report> reportRepository, IReportValidator reportValidator, IBaseRepository<User> userRepository, IMapper mapper)
-        {    
+        public ReportService(IBaseRepository<Report> reportRepository, IReportValidator reportValidator, IBaseRepository<User> userRepository, IMapper mapper, ILogger logger)
+        {
             _reportRepository = reportRepository;
             _userRepository = userRepository;
             _reportValidator = reportValidator;
             _mapper = mapper;
+            _logger = logger;
         }
 
         /// <inheritdoc />
@@ -35,7 +36,7 @@ namespace FonTech.Application.Services
 
             try
             {
-                reports = await _reportRepository.GetAll().Where(x => x.UserId == userId). // Фильтрация по userId
+                reports = await _reportRepository.GetAll().Where(x => x.UserId == userId). // Фильтрую по userId
                     Select(x => new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString())).ToArrayAsync(); // Формирую ReportDto
             }
             catch (Exception ex)
@@ -68,44 +69,44 @@ namespace FonTech.Application.Services
         }
 
         /// <inheritdoc />
-        public async Task<BaseResult<ReportDto>> GetReportByIdAsync(long id)
+        public Task<BaseResult<ReportDto>> GetReportByIdAsync(long id)
         {
             ReportDto? report;
 
             try
             {
-                report = await _reportRepository.GetAll().Select(x => new ReportDto(
+                report = _reportRepository.GetAll().AsEnumerable().Select(x => new ReportDto(
                     x.Id,
                     x.Name,
                     x.Description,
-                    x.CreatedAt.ToLongDateString())).FirstOrDefaultAsync(x => x.Id == id);
+                    x.CreatedAt.ToLongDateString())).FirstOrDefault(x => x.Id == id);
             }
             catch (Exception ex)
             {
                 _logger.Error(ex, ex.Message);
 
-                return new BaseResult<ReportDto>
+                return Task.FromResult(new BaseResult<ReportDto>()
                 {
                     ErrorMessage = ErrorMessage.InternalServerError,
                     ErrorCode = (int)ErrorCode.InternalServerError,
-                };
+                });
             }
 
             if(report == null)
             {
                 _logger.Warning(ErrorMessage.ReportNotFound);
 
-                return new BaseResult<ReportDto>
+                return Task.FromResult(new BaseResult<ReportDto>()
                 {
                     ErrorMessage = ErrorMessage.ReportNotFound,
                     ErrorCode = (int)ErrorCode.ReportNotFound,
-                };
+                });
             }
 
-            return new BaseResult<ReportDto>()
+            return Task.FromResult(new BaseResult<ReportDto>()
             {
                 Data = report,
-            };
+            });
         }
 
         /// <inheritdoc />
