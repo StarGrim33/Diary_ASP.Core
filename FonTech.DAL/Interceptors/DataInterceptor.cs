@@ -5,6 +5,33 @@ namespace FonTech.DAL.Interceptors
 {
     public class DataInterceptor : SaveChangesInterceptor
     {
+        public override ValueTask<int> SavedChangesAsync(SaveChangesCompletedEventData eventData, int result, CancellationToken cancellationToken = default)
+        {
+            var dbContext = eventData.Context;
+
+            if (dbContext == null)
+                return base.SavedChangesAsync(eventData, result);
+
+            var entries = dbContext.ChangeTracker.Entries<IAuditable>()
+                .Where(x => x.State == Microsoft.EntityFrameworkCore.EntityState.Added
+                || x.State == Microsoft.EntityFrameworkCore.EntityState.Modified);
+
+            foreach (var entry in entries)
+            {
+                if (entry.State == Microsoft.EntityFrameworkCore.EntityState.Added)
+                {
+                    entry.Property(x => x.CreatedAt).CurrentValue = DateTime.UtcNow;
+                }
+
+                if (entry.State == Microsoft.EntityFrameworkCore.EntityState.Modified)
+                {
+                    entry.Property(x => x.LastModifiedAt).CurrentValue = DateTime.UtcNow;
+                }
+            }
+
+            return base.SavedChangesAsync(eventData, result);
+        }
+
         public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)
         {
             var dbContext = eventData.Context;
@@ -12,9 +39,11 @@ namespace FonTech.DAL.Interceptors
             if (dbContext == null)
                 return base.SavingChanges(eventData, result);
 
-            var entries = dbContext.ChangeTracker.Entries<IAuditable>();
+            var entries = dbContext.ChangeTracker.Entries<IAuditable>()
+                            .Where(x => x.State == Microsoft.EntityFrameworkCore.EntityState.Added
+                            || x.State == Microsoft.EntityFrameworkCore.EntityState.Modified);
 
-            foreach(var entry in entries)
+            foreach (var entry in entries)
             {
                 if(entry.State == Microsoft.EntityFrameworkCore.EntityState.Added) 
                 {
