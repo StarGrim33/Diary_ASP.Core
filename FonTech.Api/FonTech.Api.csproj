@@ -11,6 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.0.0" />
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
@@ -22,7 +23,6 @@
     <ProjectReference Include="..\FonTech.Application\FonTech.Application.csproj" />
     <ProjectReference Include="..\FonTech.DAL\FonTech.DAL.csproj" />
     <ProjectReference Include="..\FonTech.Domain\FonTech.Domain.csproj" />
-    <ProjectReference Include="..\FonTech\FonTech.csproj" />
   </ItemGroup>
 
 </Project>

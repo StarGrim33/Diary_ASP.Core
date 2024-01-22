@@ -8,7 +8,12 @@ namespace FonTech.Application.Mapping
     {
         public ReportMapping()
         {
-            CreateMap<Report, ReportDto>().ReverseMap();
+            CreateMap<Report, ReportDto>()
+                .ForCtorParam(ctorParamName: "Id", m => m.MapFrom(s => s.Id))
+                .ForCtorParam(ctorParamName: "Name", m => m.MapFrom(s => s.Name))
+                .ForCtorParam(ctorParamName: "Description", m => m.MapFrom(m => m.Description))
+                .ForCtorParam(ctorParamName: "DateCreated", m => m.MapFrom(m => m.CreatedAt))
+                .ReverseMap();
         }
     }
 }

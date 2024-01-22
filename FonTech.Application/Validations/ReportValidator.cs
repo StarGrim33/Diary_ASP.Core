@@ -8,7 +8,6 @@ namespace FonTech.Application.Validations
 {
     public class ReportValidator : IReportValidator
     {
-
         public BaseResult CreateValidator(Report report, User user)
         {
             if(report != null)
