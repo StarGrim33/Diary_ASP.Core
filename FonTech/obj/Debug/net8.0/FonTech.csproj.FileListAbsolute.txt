@@ -64,3 +64,7 @@ C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\n
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.pdb
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\FonTech.genruntimeconfig.cache
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\obj\Debug\net8.0\ref\FonTech.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\Asp.Versioning.Http.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll

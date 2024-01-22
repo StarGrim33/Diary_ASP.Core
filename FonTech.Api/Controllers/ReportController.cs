@@ -1,5 +1,5 @@
-﻿using FonTech.Domain.Dto.Report;
-using FonTech.Domain.Entity;
+﻿using Asp.Versioning;
+using FonTech.Domain.Dto.Report;
 using FonTech.Domain.Interfaces.Services;
 using FonTech.Domain.Result;
 using Microsoft.AspNetCore.Authorization;
@@ -7,9 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FonTech.Api.Controllers
 {
-    // [Authorize]
+    [Authorize]
     [ApiController]
-    [Route("api/v1/[controller]")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class ReportController : Controller
     {
         private readonly IReportService _reportService;

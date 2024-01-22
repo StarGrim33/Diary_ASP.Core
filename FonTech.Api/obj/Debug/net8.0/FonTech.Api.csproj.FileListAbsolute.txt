@@ -98,9 +98,6 @@ C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Api\obj
 C:\Users\prosk\OneDrive\Документы\GitHub\Diary_ASP.Core\FonTech.Api\obj\Debug\net8.0\ref\FonTech.Api.dll
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\appsettings.json
-C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.deps.json
-C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.runtimeconfig.json
-C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.exe
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.Api.exe
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.Api.deps.json
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.Api.runtimeconfig.json
@@ -131,12 +128,10 @@ C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Deb
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.Application.dll
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.DAL.dll
-C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.dll
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.Domain.dll
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.Application.pdb
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.DAL.pdb
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.Domain.pdb
-C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.pdb
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\obj\Debug\net8.0\FonTech.Api.csproj.AssemblyReference.cache
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\obj\Debug\net8.0\FonTech.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\obj\Debug\net8.0\FonTech.Api.AssemblyInfoInputs.cache
@@ -159,3 +154,7 @@ C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\obj\Deb
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\obj\Debug\net8.0\FonTech.Api.pdb
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\obj\Debug\net8.0\FonTech.Api.genruntimeconfig.cache
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\obj\Debug\net8.0\ref\FonTech.Api.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Asp.Versioning.Http.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll

@@ -4,15 +4,15 @@ using Serilog;
 
 namespace FonTech.Api
 {
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddControllers();
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwagger();
+
             builder.Host.UseSerilog((context, configuration) => configuration
             .ReadFrom.Configuration(context.Configuration));
             builder.Services.AddDataAccessLayer(builder.Configuration);
@@ -23,7 +23,12 @@ namespace FonTech.Api
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
-                app.UseSwaggerUI();
+                app.UseSwaggerUI(s =>
+                {
+                    s.SwaggerEndpoint("/swagger/v1/swagger.json", name: "FonTech Swagger v1.0");
+                    s.SwaggerEndpoint("/swagger/v2/swagger.json", name: "FonTech Swagger v2.0");
+                    s.RoutePrefix = string.Empty;
+                });
             }
 
             app.UseHttpsRedirection();

@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "jgdp8nrCvJQiaSaq9Bp8PfDLBmigWZYEumxf/xU6xSku5WbpeEyIh2axwOOYbQE7tX0P1jsdxw4jcdyPbbgT7Q==",
+  "dgSpecHash": "gQU7jcFgRHmb7NP6yabE45Va9X9y0iXOnshRIqc4Nf9F3bVqOx8/z2vdxyRG9QcSbihaS+NJn18M1kRq93IgGg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech\\FonTech.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Влад и Аня\\.nuget\\packages\\asp.versioning.abstractions\\8.0.0\\asp.versioning.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Влад и Аня\\.nuget\\packages\\asp.versioning.http\\8.0.0\\asp.versioning.http.8.0.0.nupkg.sha512",
+    "C:\\Users\\Влад и Аня\\.nuget\\packages\\asp.versioning.mvc\\8.0.0\\asp.versioning.mvc.8.0.0.nupkg.sha512",
+    "C:\\Users\\Влад и Аня\\.nuget\\packages\\asp.versioning.mvc.apiexplorer\\8.0.0\\asp.versioning.mvc.apiexplorer.8.0.0.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Влад и Аня\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
