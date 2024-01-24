@@ -8,6 +8,7 @@ using FonTech.Domain.Interfaces.Services;
 using FonTech.Domain.Interfaces.Validations;
 using FonTech.Domain.Result;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Serilog;
 
 namespace FonTech.Application.Services
@@ -19,14 +20,17 @@ namespace FonTech.Application.Services
         private readonly IReportValidator _reportValidator;
         private readonly ILogger _logger;
         private readonly IMapper _mapper;
+        private readonly IMemoryCache _memoryCache;
 
-        public ReportService(IBaseRepository<Report> reportRepository, IReportValidator reportValidator, IBaseRepository<User> userRepository, IMapper mapper, ILogger logger)
+        public ReportService(IBaseRepository<Report> reportRepository, IReportValidator reportValidator,
+            IBaseRepository<User> userRepository, IMapper mapper, ILogger logger, IMemoryCache memoryCache)
         {
             _reportRepository = reportRepository;
             _userRepository = userRepository;
             _reportValidator = reportValidator;
             _mapper = mapper;
             _logger = logger;
+            _memoryCache = memoryCache;
         }
 
         /// <inheritdoc />
@@ -36,8 +40,16 @@ namespace FonTech.Application.Services
 
             try
             {
-                reports = await _reportRepository.GetAll().Where(x => x.UserId == userId). // Фильтрую по userId
-                    Select(x => new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString())).ToArrayAsync(); // Формирую ReportDto
+                if (_memoryCache.TryGetValue(userId, out ReportDto[]? result))
+                {
+                    reports = result;
+                }
+                else
+                {
+                    reports = await _reportRepository.GetAll().Where(x => x.UserId == userId). // Фильтрую по userId
+                        Select(x => new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString())).ToArrayAsync(); // Формирую ReportDto
+                    _memoryCache.Set(userId, reports, TimeSpan.FromMinutes(10));
+                }
             }
             catch (Exception ex)
             {
@@ -75,11 +87,16 @@ namespace FonTech.Application.Services
 
             try
             {
-                report = _reportRepository.GetAll().AsEnumerable().Select(x => new ReportDto(
-                    x.Id,
-                    x.Name,
-                    x.Description,
-                    x.CreatedAt.ToLongDateString())).FirstOrDefault(x => x.Id == id);
+                if (_memoryCache.TryGetValue(id, out ReportDto result))
+                {
+                    report = result;
+                }
+                else
+                {
+                    report = _reportRepository.GetAll().AsEnumerable().Select(x => 
+                    new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString())).FirstOrDefault(x => x.Id == id);
+                    _memoryCache.Set(id, report, TimeSpan.FromMinutes(10));
+                }
             }
             catch (Exception ex)
             {
@@ -92,7 +109,7 @@ namespace FonTech.Application.Services
                 });
             }
 
-            if(report == null)
+            if (report == null)
             {
                 _logger.Warning(ErrorMessage.ReportNotFound);
 
@@ -118,7 +135,7 @@ namespace FonTech.Application.Services
                 var report = await _reportRepository.GetAll().FirstOrDefaultAsync(x => x.Name == dto.Name);
                 var result = _reportValidator.CreateValidator(report: report, user: user);
 
-                if(!result.IsSuccess)
+                if (!result.IsSuccess)
                 {
                     return new BaseResult<ReportDto>()
                     {

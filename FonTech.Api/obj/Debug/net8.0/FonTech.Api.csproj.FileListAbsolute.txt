@@ -158,3 +158,5 @@ C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Deb
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Asp.Versioning.Http.dll
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.Api.xml
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\obj\Debug\net8.0\FonTech.Api.xml

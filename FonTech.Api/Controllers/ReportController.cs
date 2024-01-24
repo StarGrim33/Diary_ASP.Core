@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FonTech.Api.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [ApiController]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
@@ -20,6 +20,22 @@ namespace FonTech.Api.Controllers
             _reportService = reportService;
         }
 
+        /// <summary>
+        /// Получить один отчет пользователя по id отчета
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <remarks>
+        /// Request for create report
+        /// 
+        ///     POST
+        ///     {
+        ///         "id": 1,
+        ///     }
+        ///     
+        /// </remarks>
+        /// <response code="200">Если отчет получен</response>
+        /// <response code="400">Если отчет не был получен</response>
         [HttpGet(template: "{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -35,6 +51,22 @@ namespace FonTech.Api.Controllers
             return BadRequest(response);
         }
 
+        /// <summary>
+        /// Получение всех отчетов пользователя по его id
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        /// <remarks>
+        /// Request for create report
+        /// 
+        ///     POST
+        ///     {
+        ///         "userId": 1,
+        ///     }
+        ///     
+        /// </remarks>
+        /// <response code="200">Если отчеты получены</response>
+        /// <response code="400">Если отчет не были получены</response>
         [HttpGet(template: "Reports/{userId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -50,6 +82,23 @@ namespace FonTech.Api.Controllers
             return BadRequest(response);
         }
 
+        /// <summary>
+        /// Создание отчета
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <remarks>
+        /// Request for create report
+        /// 
+        ///     POST
+        ///     {
+        ///         "name": "Report #1",
+        ///         "description": Test report #1",
+        ///         "userId": 1,
+        ///     }
+        ///     
+        /// </remarks>
+        /// <response code="200">Если отчет создался</response>
+        /// <response code="400">Если отчет явно не был создан</response>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -65,6 +114,22 @@ namespace FonTech.Api.Controllers
             return BadRequest(response);
         }
 
+        /// <summary>
+        /// Удаление отчета
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <remarks>
+        /// Request for create report
+        /// 
+        ///     POST
+        ///     {
+        ///         "id": 1,
+        ///     }
+        ///     
+        /// </remarks>
+        /// <response code="200">Если отчет удалился</response>
+        /// <response code="400">Если отчет явно не был удален</response>
         [HttpDelete(template: "{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -80,6 +145,24 @@ namespace FonTech.Api.Controllers
             return BadRequest(response);
         }
 
+        /// <summary>
+        /// Обновление отчета
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        /// <remarks>
+        /// Request for create report
+        /// 
+        ///     POST
+        ///     {
+        ///         "id": 1,
+        ///         "name": "Report #1",
+        ///         "description": Test report #1",
+        ///     }
+        ///     
+        /// </remarks>
+        /// <response code="200">Если отчет обновился</response>
+        /// <response code="400">Если отчет явно не был обновлен</response>
         [HttpPut]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

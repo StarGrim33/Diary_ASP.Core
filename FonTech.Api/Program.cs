@@ -12,7 +12,7 @@ namespace FonTech.Api
 
             builder.Services.AddControllers();
             builder.Services.AddSwagger();
-
+            builder.Services.AddMemoryCache();
             builder.Host.UseSerilog((context, configuration) => configuration
             .ReadFrom.Configuration(context.Configuration));
             builder.Services.AddDataAccessLayer(builder.Configuration);

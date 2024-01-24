@@ -8,6 +8,7 @@
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
     <DockerfileContext>..\FonTech</DockerfileContext>
     <UserSecretsId>ae01ee09-cc29-4f1f-be61-d4aaa87d331c</UserSecretsId>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,5 +25,4 @@
     <ProjectReference Include="..\FonTech.DAL\FonTech.DAL.csproj" />
     <ProjectReference Include="..\FonTech.Domain\FonTech.Domain.csproj" />
   </ItemGroup>
-
 </Project>
