@@ -70,6 +70,15 @@ namespace FonTech.Application.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Пароли не совпадают.
+        /// </summary>
+        internal static string PasswordsNotEquals {
+            get {
+                return ResourceManager.GetString("PasswordsNotEquals", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Отчет с таким названием уже есть.
         /// </summary>
         internal static string ReportAlreadyExist {
@@ -93,6 +102,15 @@ namespace FonTech.Application.Resources {
         internal static string ReportsNotFound {
             get {
                 return ResourceManager.GetString("ReportsNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Пользователь уже существует.
+        /// </summary>
+        internal static string UserAlreadyExist {
+            get {
+                return ResourceManager.GetString("UserAlreadyExist", resourceCulture);
             }
         }
         

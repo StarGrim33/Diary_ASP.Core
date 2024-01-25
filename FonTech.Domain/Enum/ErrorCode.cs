@@ -9,5 +9,7 @@
         ReportAlreadyExist = 2,
         InternalServerError = 10,
         UserNotFound = 11,
+        UserAlreadyExist = 12,
+        PasswordsNotEquals = 21,
     }
 }

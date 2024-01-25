@@ -1,5 +1,6 @@
 using FonTech.Application.DependencyInjection;
 using FonTech.DAL.DependencyInjection;
+using FonTech.Domain.Settings;
 using Serilog;
 
 namespace FonTech.Api
@@ -10,6 +11,8 @@ namespace FonTech.Api
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection(JwtSettings.DefaultSection)); // Заполнение класса JwtSettings из AppSettings
+            builder.Services.AddAuthenticationAndAuthorization(builder);
             builder.Services.AddControllers();
             builder.Services.AddSwagger();
             builder.Services.AddMemoryCache();

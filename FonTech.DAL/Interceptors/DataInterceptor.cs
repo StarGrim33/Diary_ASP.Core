@@ -5,12 +5,12 @@ namespace FonTech.DAL.Interceptors
 {
     public class DataInterceptor : SaveChangesInterceptor
     {
-        public override ValueTask<int> SavedChangesAsync(SaveChangesCompletedEventData eventData, int result, CancellationToken cancellationToken = default)
+        public override ValueTask<InterceptionResult<int>> SavingChangesAsync(DbContextEventData eventData, InterceptionResult<int> result, CancellationToken cancellationToken = default)
         {
             var dbContext = eventData.Context;
 
             if (dbContext == null)
-                return base.SavedChangesAsync(eventData, result);
+                return base.SavingChangesAsync(eventData, result, cancellationToken);
 
             var entries = dbContext.ChangeTracker.Entries<IAuditable>()
                 .Where(x => x.State == Microsoft.EntityFrameworkCore.EntityState.Added
@@ -29,7 +29,7 @@ namespace FonTech.DAL.Interceptors
                 }
             }
 
-            return base.SavedChangesAsync(eventData, result);
+            return base.SavingChangesAsync(eventData, result, cancellationToken);
         }
 
         public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)
@@ -45,7 +45,7 @@ namespace FonTech.DAL.Interceptors
 
             foreach (var entry in entries)
             {
-                if(entry.State == Microsoft.EntityFrameworkCore.EntityState.Added) 
+                if(entry.State == Microsoft.EntityFrameworkCore.EntityState.Added)
                 {
                     entry.Property(x => x.CreatedAt).CurrentValue = DateTime.UtcNow;
                 }
