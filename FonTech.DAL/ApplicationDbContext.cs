@@ -13,7 +13,7 @@ namespace FonTech.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.AddInterceptors(new DataInterceptor());
+            optionsBuilder.AddInterceptors(new DateInterceptor());
             base.OnConfiguring(optionsBuilder);
         }
 

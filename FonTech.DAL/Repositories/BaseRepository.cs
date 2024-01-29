@@ -17,7 +17,6 @@ namespace FonTech.DAL.Repositories
 
             await _context.AddAsync(entity);
             await _context.SaveChangesAsync();
-
             return entity;
         }
 
@@ -32,7 +31,6 @@ namespace FonTech.DAL.Repositories
 
             _context.Set<TEntity>().Remove(entity);
             await _context.SaveChangesAsync();
-
             return entity;
         }
 

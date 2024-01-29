@@ -13,7 +13,7 @@ namespace FonTech.DAL.DependencyInjection
         public static void AddDataAccessLayer(this IServiceCollection services, IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString(name: "PostgresSQL");
-            services.AddSingleton<DataInterceptor>();
+            services.AddSingleton<DateInterceptor>();
             services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connectionString));
             services.InitRepositories();
         }
