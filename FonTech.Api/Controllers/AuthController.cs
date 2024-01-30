@@ -42,7 +42,14 @@ namespace FonTech.Api.Controllers
         [HttpPost(template:"login")]
         public async Task<ActionResult<BaseResult<TokenDto>>> Login([FromBody] LoginUserDto dto)
         {
-            return BadRequest(dto);
+            var response = await _authService.Login(dto);
+
+            if (response.IsSuccess)
+            {
+                return Ok(response);
+            }
+
+            return BadRequest(response);
         }
     }
 }

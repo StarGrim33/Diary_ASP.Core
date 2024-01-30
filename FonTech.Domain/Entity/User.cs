@@ -12,6 +12,8 @@ namespace FonTech.Domain.Entity
 
         public List<Report> Reports { get; set; }
 
+        public UserToken UserToken { get; set; }
+
         public DateTime CreatedAt { get; set; }
 
         public long CreatedBy { get; set; }

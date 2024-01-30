@@ -138,4 +138,7 @@
   <data name="UserNotFound" xml:space="preserve">
     <value>Пользователь не найден</value>
   </data>
+  <data name="WrongPassword" xml:space="preserve">
+    <value>Неверный пароль</value>
+  </data>
 </root>

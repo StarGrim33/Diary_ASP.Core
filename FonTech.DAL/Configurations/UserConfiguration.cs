@@ -12,6 +12,7 @@ namespace FonTech.DAL.Configurations
             builder.Property(x => x.Login).IsRequired().HasMaxLength(128);
             builder.Property(x => x.Password).IsRequired();
             builder.HasMany<Report>(x => x.Reports).WithOne(x  => x.User).HasForeignKey(x => x.UserId).HasPrincipalKey(x => x.Id);
+
             builder.HasData(new User()
             {
                 Id = 1,

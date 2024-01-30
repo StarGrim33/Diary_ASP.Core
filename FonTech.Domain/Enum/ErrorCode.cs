@@ -11,5 +11,6 @@
         UserNotFound = 11,
         UserAlreadyExist = 12,
         PasswordsNotEquals = 21,
+        WrongPassword = 22,
     }
 }
