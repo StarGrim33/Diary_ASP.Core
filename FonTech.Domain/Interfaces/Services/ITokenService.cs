@@ -1,4 +1,6 @@
-﻿using System.Security.Claims;
+﻿using FonTech.Domain.Dto;
+using FonTech.Domain.Result;
+using System.Security.Claims;
 
 namespace FonTech.Domain.Interfaces.Services
 {
@@ -6,6 +8,10 @@ namespace FonTech.Domain.Interfaces.Services
     {
         string GenerateAccessToken(IEnumerable<Claim> claims);
 
-        string GenerateAccessToken();
+        string GenerateRefreshToken();
+
+        ClaimsPrincipal GetClaimsPrincipalFromExpiredToken(string accessToken);
+
+        Task<BaseResult<TokenDto>> RefreshToken(TokenDto dto);
     }
 }

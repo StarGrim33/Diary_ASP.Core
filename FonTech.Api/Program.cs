@@ -5,8 +5,15 @@ using Serilog;
 
 namespace FonTech.Api
 {
+    /// <summary>
+    /// Main program
+    /// </summary>
     public static class Program
     {
+        /// <summary>
+        /// Entry point
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
@@ -16,8 +23,10 @@ namespace FonTech.Api
             builder.Services.AddControllers();
             builder.Services.AddSwagger();
             builder.Services.AddMemoryCache();
+
             builder.Host.UseSerilog((context, configuration) => configuration
             .ReadFrom.Configuration(context.Configuration));
+
             builder.Services.AddDataAccessLayer(builder.Configuration);
             builder.Services.AddApplication();
 

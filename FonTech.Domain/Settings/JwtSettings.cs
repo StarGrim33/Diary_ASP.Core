@@ -1,5 +1,4 @@
-﻿
-namespace FonTech.Domain.Settings
+﻿namespace FonTech.Domain.Settings
 {
     public class JwtSettings
     {

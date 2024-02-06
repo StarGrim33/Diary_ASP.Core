@@ -5,12 +5,12 @@ namespace FonTech.DAL.Interceptors
 {
     public class DateInterceptor : SaveChangesInterceptor
     {
-        public override ValueTask<InterceptionResult<int>> SavingChangesAsync(DbContextEventData eventData, InterceptionResult<int> result, CancellationToken cancellationToken = default)
+        public override async ValueTask<InterceptionResult<int>> SavingChangesAsync(DbContextEventData eventData, InterceptionResult<int> result, CancellationToken cancellationToken = default)
         {
             var dbContext = eventData.Context;
 
             if (dbContext == null)
-                return base.SavingChangesAsync(eventData, result, cancellationToken);
+                return await base.SavingChangesAsync(eventData, result, cancellationToken);
 
             var entries = dbContext.ChangeTracker.Entries<IAuditable>()
                 .Where(x => x.State == Microsoft.EntityFrameworkCore.EntityState.Added
@@ -29,7 +29,7 @@ namespace FonTech.DAL.Interceptors
                 }
             }
 
-            return base.SavingChangesAsync(eventData, result, cancellationToken);
+            return await base.SavingChangesAsync(eventData, result, cancellationToken);
         }
 
         public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)

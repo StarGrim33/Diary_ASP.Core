@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FonTech.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfd99ce3535ebe923bbf24a407b008f409a11ca3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+805aa109b55afa8a1968ea29ebb58c21007288f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("FonTech.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FonTech.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

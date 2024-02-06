@@ -37,7 +37,7 @@ namespace FonTech.Application.Services
         {
             try
             {
-                var user = await _userRepository.GetAll().FirstOrDefaultAsync(x => x.Login == dto.Login);
+                var user = await _userRepository.GetAll().AsNoTracking().FirstOrDefaultAsync(x => x.Login == dto.Login);
 
                 if (user == null)
                 {
@@ -57,7 +57,7 @@ namespace FonTech.Application.Services
                     };
                 }
 
-                var userToken = await _userTokenRepository.GetAll().FirstOrDefaultAsync(x => x.Id == user.Id);
+                var userToken = await _userTokenRepository.GetAll().AsNoTracking().FirstOrDefaultAsync(x => x.Id == user.Id);
                 
                 var claims = new List<Claim>()
                 {
@@ -65,8 +65,8 @@ namespace FonTech.Application.Services
                     new (ClaimTypes.Role, "User"),
                 };
 
-                var accessToken = _tokenService.GenerateAccessToken();
-                var refreshToken = _tokenService.GenerateAccessToken();
+                var accessToken = _tokenService.GenerateRefreshToken();
+                var refreshToken = _tokenService.GenerateRefreshToken();
 
                 if (userToken == null)
                 {

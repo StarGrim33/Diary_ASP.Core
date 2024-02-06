@@ -47,7 +47,7 @@ namespace FonTech.Application.Services
                 else
                 {
                     reports = await _reportRepository.GetAll().Where(x => x.UserId == userId). // Фильтрую по userId
-                        Select(x => new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString())).ToArrayAsync(); // Формирую ReportDto
+                        Select(x => new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString())).AsNoTracking().ToArrayAsync(); // Формирую ReportDto
                     _memoryCache.Set(userId, reports, TimeSpan.FromMinutes(10));
                 }
             }
@@ -93,7 +93,7 @@ namespace FonTech.Application.Services
                 }
                 else
                 {
-                    report = _reportRepository.GetAll().AsEnumerable().Select(x => 
+                    report = _reportRepository.GetAll().AsNoTracking().AsEnumerable().Select(x => 
                     new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString())).FirstOrDefault(x => x.Id == id);
                     _memoryCache.Set(id, report, TimeSpan.FromMinutes(10));
                 }

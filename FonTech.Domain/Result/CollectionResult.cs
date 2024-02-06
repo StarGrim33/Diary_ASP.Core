@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FonTech.Domain.Result
+﻿namespace FonTech.Domain.Result
 {
     public class CollectionResult<T> : BaseResult<IEnumerable<T>>
     {
