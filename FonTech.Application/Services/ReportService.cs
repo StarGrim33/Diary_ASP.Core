@@ -36,7 +36,7 @@ namespace FonTech.Application.Services
         /// <inheritdoc />
         public async Task<CollectionResult<ReportDto>> GetReportsAsync(long userId)
         {
-            ReportDto[] reports;
+            ReportDto[]? reports;
 
             try
             {
@@ -46,8 +46,8 @@ namespace FonTech.Application.Services
                 }
                 else
                 {
-                    reports = await _reportRepository.GetAll().Where(x => x.UserId == userId). // Фильтрую по userId
-                        Select(x => new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString())).AsNoTracking().ToArrayAsync(); // Формирую ReportDto
+                    reports = await _reportRepository.GetAll().AsNoTracking().Where(x => x.UserId == userId). // Фильтрую по userId
+                        Select(x => new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString())).ToArrayAsync(); // Формирую ReportDto
                     _memoryCache.Set(userId, reports, TimeSpan.FromMinutes(10));
                 }
             }
@@ -93,8 +93,9 @@ namespace FonTech.Application.Services
                 }
                 else
                 {
-                    report = _reportRepository.GetAll().AsNoTracking().AsEnumerable().Select(x => 
-                    new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString())).FirstOrDefault(x => x.Id == id);
+                    report = _reportRepository.GetAll().AsNoTracking()
+                    .Select(x => new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString()))
+                    .AsEnumerable().FirstOrDefault(x => x.Id == id);
                     _memoryCache.Set(id, report, TimeSpan.FromMinutes(10));
                 }
             }
@@ -124,6 +125,55 @@ namespace FonTech.Application.Services
             {
                 Data = report,
             });
+        }
+
+        /// <inheritdoc />
+        public async Task<CollectionResult<ReportDto>> GetUserReportsByDateAsync(DateTime date, long userId)
+        {
+            ReportDto[]? reports;
+
+            try
+            {
+                if (_memoryCache.TryGetValue(userId, out ReportDto[]? result))
+                {
+                    reports = result;
+                }
+                else
+                {
+                    reports = await _reportRepository.GetAll()
+                   .Where(x => x.UserId == userId && x.CreatedAt.Date == date.Date)
+                   .Select(x => new ReportDto(x.Id, x.Name, x.Description, x.CreatedBy.ToString())).ToArrayAsync();
+                }
+
+                if (reports.Length == 0)
+                {
+                    _logger.Warning(ErrorMessage.ReportsNotFound, result.Length);
+
+                    return new CollectionResult<ReportDto>()
+                    {
+                        ErrorMessage = ErrorMessage.ReportsNotFound,
+                        ErrorCode = (int)ErrorCode.ReportsNotFound,
+                    };
+                }
+
+                _memoryCache.Set(userId, reports, TimeSpan.FromMinutes(10)); // Обновление кэша
+
+                return new CollectionResult<ReportDto>()
+                {
+                    Data = reports,
+                    Count = reports.Length
+                };
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, ex.Message);
+
+                return new CollectionResult<ReportDto>()
+                {
+                    ErrorMessage = ErrorMessage.ReportsNotFound,
+                    ErrorCode = (int)ErrorCode.ReportsNotFound,
+                };
+            }
         }
 
         /// <inheritdoc />

@@ -1,3 +1,4 @@
+using FonTech.Api.Middlewares;
 using FonTech.Application.DependencyInjection;
 using FonTech.DAL.DependencyInjection;
 using FonTech.Domain.Settings;
@@ -23,14 +24,16 @@ namespace FonTech.Api
             builder.Services.AddControllers();
             builder.Services.AddSwagger();
             builder.Services.AddMemoryCache();
-
             builder.Host.UseSerilog((context, configuration) => configuration
             .ReadFrom.Configuration(context.Configuration));
 
             builder.Services.AddDataAccessLayer(builder.Configuration);
             builder.Services.AddApplication();
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
             var app = builder.Build();
+
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
 
             if (app.Environment.IsDevelopment())
             {
@@ -39,10 +42,10 @@ namespace FonTech.Api
                 {
                     s.SwaggerEndpoint("/swagger/v1/swagger.json", name: "FonTech Swagger v1.0");
                     s.SwaggerEndpoint("/swagger/v2/swagger.json", name: "FonTech Swagger v2.0");
-                    s.RoutePrefix = string.Empty;
                 });
             }
 
+            app.UseCors(c => c.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseHttpsRedirection();
             app.UseAuthorization();
             app.MapControllers();

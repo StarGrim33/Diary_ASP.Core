@@ -23,6 +23,14 @@ namespace FonTech.Domain.Interfaces.Services
         Task<BaseResult<ReportDto>> GetReportByIdAsync(long id);
 
         /// <summary>
+        /// Получение отчетов по айди пользователя и дате
+        /// </summary>
+        /// <param name="date"></param>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        Task<CollectionResult<ReportDto>> GetUserReportsByDateAsync(DateTime date, long userId);
+
+        /// <summary>
         /// Создание отчета с базовыми параметрами
         /// </summary>
         /// <param name="dto"></param>

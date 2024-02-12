@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CTgmYDgNnrCBzJRX6hMM514/pwMAZF72euEtClsWlt+LBKjQTv4Oz4siv46f30oqWUa/s4WV3LWbTI21utaoRw==",
+  "dgSpecHash": "PcDLUWk1FkNYBdZU6CPDXd9b44SXHFyRY/7+EBvoSMEtEKlNsZAO9NvCNu3S6fKc1UkZOj7x/jaxb+Ph5DWIvA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Api\\FonTech.Api.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,7 @@
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.0\\npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
+    "C:\\Users\\Влад и Аня\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\serilog\\3.1.1\\serilog.3.1.1.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\serilog.aspnetcore\\8.0.0\\serilog.aspnetcore.8.0.0.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\serilog.extensions.hosting\\8.0.0\\serilog.extensions.hosting.8.0.0.nupkg.sha512",
@@ -51,12 +52,14 @@
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\serilog.sinks.console\\5.0.0\\serilog.sinks.console.5.0.0.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\serilog.sinks.debug\\2.0.0\\serilog.sinks.debug.2.0.0.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
+    "C:\\Users\\Влад и Аня\\.nuget\\packages\\stackexchange.redis\\2.7.17\\stackexchange.redis.2.7.17.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.1.2\\system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512",
+    "C:\\Users\\Влад и Аня\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],

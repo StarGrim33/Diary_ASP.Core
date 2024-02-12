@@ -10,6 +10,7 @@
         InternalServerError = 10,
         UserNotFound = 11,
         UserAlreadyExist = 12,
+        UnauthorizedAccess = 13,
         PasswordsNotEquals = 21,
         WrongPassword = 22,
     }

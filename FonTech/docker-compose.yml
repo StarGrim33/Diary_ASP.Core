@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  fontech.api:
+    image: ${DOCKER_REGISTRY-}fontechapi
+    build:
+      context: .
+      dockerfile: ../FonTech.Api/Dockerfile

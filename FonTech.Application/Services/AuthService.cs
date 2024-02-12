@@ -35,76 +35,63 @@ namespace FonTech.Application.Services
 
         public async Task<BaseResult<TokenDto>> Login(LoginUserDto dto)
         {
-            try
+            var user = await _userRepository.GetAll().AsNoTracking().FirstOrDefaultAsync(x => x.Login == dto.Login);
+
+            if (user == null)
             {
-                var user = await _userRepository.GetAll().AsNoTracking().FirstOrDefaultAsync(x => x.Login == dto.Login);
-
-                if (user == null)
+                return new BaseResult<TokenDto>()
                 {
-                    return new BaseResult<TokenDto>()
-                    {
-                        ErrorMessage = ErrorMessage.UserNotFound,
-                        ErrorCode = (int)ErrorCode.UserNotFound,
-                    };
-                }
+                    ErrorMessage = ErrorMessage.UserNotFound,
+                    ErrorCode = (int)ErrorCode.UserNotFound,
+                };
+            }
 
-                if (!IsVerifiedPassword(user.Password, dto.Password))
+            if (!IsVerifiedPassword(user.Password, dto.Password))
+            {
+                return new BaseResult<TokenDto>()
                 {
-                    return new BaseResult<TokenDto>()
-                    {
-                        ErrorMessage = ErrorMessage.WrongPassword,
-                        ErrorCode = (int)ErrorCode.WrongPassword,
-                    };
-                }
+                    ErrorMessage = ErrorMessage.WrongPassword,
+                    ErrorCode = (int)ErrorCode.WrongPassword,
+                };
+            }
 
-                var userToken = await _userTokenRepository.GetAll().AsNoTracking().FirstOrDefaultAsync(x => x.Id == user.Id);
-                
-                var claims = new List<Claim>()
+            var userToken = await _userTokenRepository.GetAll().AsNoTracking().FirstOrDefaultAsync(x => x.Id == user.Id);
+
+            var claims = new List<Claim>()
                 {
                     new (ClaimTypes.Name, user.Login),
                     new (ClaimTypes.Role, "User"),
                 };
 
-                var accessToken = _tokenService.GenerateRefreshToken();
-                var refreshToken = _tokenService.GenerateRefreshToken();
+            var accessToken = _tokenService.GenerateAccessToken(claims);
+            var refreshToken = _tokenService.GenerateRefreshToken();
 
-                if (userToken == null)
-                {
-                    userToken = new UserToken()
-                    {
-                        UserId = user.Id,
-                        RefreshToken = refreshToken,
-                        RefreshTokenExpireTime = DateTime.UtcNow.AddDays(7),
-
-                    };
-
-                    await _userTokenRepository.CreateAsync(userToken);
-                }
-                else
-                {
-                    userToken.RefreshToken = refreshToken;
-                    userToken.RefreshTokenExpireTime = DateTime.UtcNow.AddDays(7);
-                }
-
-                return new BaseResult<TokenDto>()
-                {
-                    Data = new TokenDto()
-                    {
-                        AccessToken = accessToken,
-                        RefreshToken = refreshToken,
-                    }
-                };
-            }
-            catch (Exception ex)
+            if (userToken == null)
             {
-                _logger.Error(ex, ex.Message);
-
-                return new BaseResult<TokenDto>()
+                userToken = new UserToken()
                 {
-                    ErrorMessage = ErrorMessage.InternalServerError,
-                    ErrorCode = (int)ErrorCode.InternalServerError,
+                    UserId = user.Id,
+                    RefreshToken = refreshToken,
+                    RefreshTokenExpireTime = DateTime.UtcNow.AddDays(7),
                 };
+
+                await _userTokenRepository.CreateAsync(userToken);
             }
+            else
+            {
+                userToken.RefreshToken = refreshToken;
+                userToken.RefreshTokenExpireTime = DateTime.UtcNow.AddDays(7);
+                await _userTokenRepository.UpdateAsync(userToken);
+            }
+
+            return new BaseResult<TokenDto>()
+            {
+                Data = new TokenDto()
+                {
+                    AccessToken = accessToken,
+                    RefreshToken = refreshToken,
+                }
+            };
         }
 
         public async Task<BaseResult<UserDto>> Register(RegisterUserDto dto)
@@ -118,50 +105,37 @@ namespace FonTech.Application.Services
                 };
             }
 
-            try
+            var user = await _userRepository.GetAll().FirstOrDefaultAsync(x => x.Login == dto.Login);
+
+            if (user != null)
             {
-                var user = await _userRepository.GetAll().FirstOrDefaultAsync(x => x.Login == dto.Login);
-
-                if (user != null)
-                {
-                    return new BaseResult<UserDto>()
-                    {
-                        ErrorMessage = ErrorMessage.UserAlreadyExist,
-                        ErrorCode = (int)ErrorCode.UserAlreadyExist,
-                    };
-                }
-
-                var hashUserPassword = HashPassword(dto.Password);
-
-                user = new User()
-                {
-                    Login = dto.Login,
-                    Password = HashPassword(dto.Password),
-                };
-
-                await _userRepository.CreateAsync(user);
-
                 return new BaseResult<UserDto>()
                 {
-                    Data = _mapper.Map<UserDto>(user),
+                    ErrorMessage = ErrorMessage.UserAlreadyExist,
+                    ErrorCode = (int)ErrorCode.UserAlreadyExist,
                 };
             }
-            catch (Exception ex)
-            {
-                _logger.Error(ex, ex.Message);
 
-                return new BaseResult<UserDto>()
-                {
-                    ErrorMessage = ErrorMessage.InternalServerError,
-                    ErrorCode = (int)ErrorCode.InternalServerError,
-                };
-            }
+            var hashUserPassword = HashPassword(dto.Password);
+
+            user = new User()
+            {
+                Login = dto.Login,
+                Password = hashUserPassword,
+            };
+
+            await _userRepository.CreateAsync(user);
+
+            return new BaseResult<UserDto>()
+            {
+                Data = _mapper.Map<UserDto>(user),
+            };
         }
 
         private string HashPassword(string password)
         {
             var bytes = SHA256.HashData(Encoding.UTF8.GetBytes(password));
-            return Convert.ToBase64String(bytes).ToLower();
+            return Convert.ToBase64String(bytes);
         }
 
         private bool IsVerifiedPassword(string userPasswordHash, string userPassword)

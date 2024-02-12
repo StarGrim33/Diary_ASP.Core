@@ -4,6 +4,20 @@
         <name>FonTech.Api</name>
     </assembly>
     <members>
+        <member name="M:FonTech.Api.Controllers.AuthController.Register(FonTech.Domain.Dto.User.RegisterUserDto)">
+            <summary>
+            Регистрация пользователя
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FonTech.Api.Controllers.AuthController.Login(FonTech.Domain.Dto.User.LoginUserDto)">
+            <summary>
+            Авторизация пользователя
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
         <member name="M:FonTech.Api.Controllers.ReportController.GetReport(System.Int64)">
             <summary>
             Получить один отчет пользователя по id отчета
@@ -96,6 +110,40 @@
             </remarks>
             <response code="200">Если отчет обновился</response>
             <response code="400">Если отчет явно не был обновлен</response>
+        </member>
+        <member name="T:FonTech.Api.Controllers.TokenController">
+            <summary>
+            Токен контроллер для авторизации и аутентификации в Web API
+            </summary>
+        </member>
+        <member name="M:FonTech.Api.Controllers.TokenController.RefreshToken(FonTech.Domain.Dto.TokenDto)">
+            <summary>
+            Обновить токен
+            </summary>
+            <param name="tokenDto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FonTech.Api.Middlewares.ExceptionHandlingMiddleware">
+            <summary>
+            Глобальная обработка ошибок
+            </summary>
+        </member>
+        <member name="T:FonTech.Api.Program">
+            <summary>
+            Main program
+            </summary>
+        </member>
+        <member name="M:FonTech.Api.Program.Main(System.String[])">
+            <summary>
+            Entry point
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:FonTech.Api.Startup.AddAuthenticationAndAuthorization(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Подключение аутентификации и авторизации
+            </summary>
+            <param name="services"></param>
         </member>
         <member name="M:FonTech.Api.Startup.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>

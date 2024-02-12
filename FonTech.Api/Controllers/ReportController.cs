@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FonTech.Api.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [ApiController]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
@@ -73,6 +73,21 @@ namespace FonTech.Api.Controllers
         public async Task<ActionResult<BaseResult<ReportDto>>> GetUserReports(long userId)
         {
             var response = await _reportService.GetReportsAsync(userId);
+
+            if (response.IsSuccess)
+            {
+                return Ok(response);
+            }
+
+            return BadRequest(response);
+        }
+
+        [HttpGet(template: "Reports/{date}/{userId}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<BaseResult<ReportDto>>> GetUserReportsByDate(DateTime date, long userId)
+        {
+            var response = await _reportService.GetUserReportsByDateAsync(date, userId);
 
             if (response.IsSuccess)
             {

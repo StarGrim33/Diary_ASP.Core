@@ -160,3 +160,13 @@ C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Deb
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\FonTech.Api.xml
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\obj\Debug\net8.0\FonTech.Api.xml
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Api\bin\Debug\net8.0\StackExchange.Redis.dll

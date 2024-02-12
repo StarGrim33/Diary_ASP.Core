@@ -55,6 +55,8 @@ namespace FonTech.Application.Services
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtKey)),
                 ValidateLifetime = true,
+                ValidAudience = _audience,
+                ValidIssuer = _issuer,
             };
 
             var tokenHandler = new JwtSecurityTokenHandler();

@@ -1,7 +1,7 @@
-﻿using FonTech.Application.Services;
-using FonTech.Domain.Dto;
+﻿using FonTech.Domain.Dto;
 using FonTech.Domain.Interfaces.Services;
 using FonTech.Domain.Result;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FonTech.Api.Controllers
@@ -9,6 +9,7 @@ namespace FonTech.Api.Controllers
     /// <summary>
     /// Токен контроллер для авторизации и аутентификации в Web API
     /// </summary>
+    [ApiController]
     public class TokenController : Controller
     {
         private readonly ITokenService _tokenService;
@@ -24,6 +25,7 @@ namespace FonTech.Api.Controllers
         /// <param name="tokenDto"></param>
         /// <returns></returns>
         [HttpPost]
+        [Route(template: "refresh")]
         public async Task<ActionResult<BaseResult<TokenDto>>> RefreshToken([FromBody] TokenDto tokenDto)
         {
             var response = await _tokenService.RefreshToken(tokenDto);
