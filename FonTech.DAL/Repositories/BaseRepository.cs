@@ -16,7 +16,6 @@ namespace FonTech.DAL.Repositories
             ArgumentNullException.ThrowIfNull(entity);
 
             await _context.AddAsync(entity);
-            await _context.SaveChangesAsync();
             return entity;
         }
 
@@ -25,21 +24,23 @@ namespace FonTech.DAL.Repositories
             return _context.Set<TEntity>();
         }
 
-        public async Task<TEntity> RemoveAsync(TEntity entity)
+        public void Remove(TEntity entity)
         {
             ArgumentNullException.ThrowIfNull(entity);
 
             _context.Set<TEntity>().Remove(entity);
-            await _context.SaveChangesAsync();
-            return entity;
         }
 
-        public async Task<TEntity> UpdateAsync(TEntity entity)
+        public async Task<int> SaveChangesAsync()
+        {
+            return await _context.SaveChangesAsync();
+        }
+
+        public TEntity Update(TEntity entity)
         {
             ArgumentNullException.ThrowIfNull(entity);
 
             _context.Set<TEntity>().Update(entity);
-            await _context.SaveChangesAsync();
             return entity;
         }
     }

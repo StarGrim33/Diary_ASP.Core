@@ -90,7 +90,9 @@ namespace FonTech.Application.Services
 
             var newAccessToken = GenerateAccessToken(claimsPrincipal.Claims);
             user.UserToken.RefreshToken = GenerateRefreshToken();
-            await _userRepository.UpdateAsync(user);
+
+            _userRepository.Update(user);
+            await _userRepository.SaveChangesAsync();
 
             return new BaseResult<TokenDto>()
             {

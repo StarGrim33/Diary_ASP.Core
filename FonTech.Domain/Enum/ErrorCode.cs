@@ -11,7 +11,11 @@
         UserNotFound = 11,
         UserAlreadyExist = 12,
         UnauthorizedAccess = 13,
+        UserAlreadyHasRole = 14,
         PasswordsNotEquals = 21,
         WrongPassword = 22,
+        RoleAlreadyExist = 31,
+        RoleNotFound = 32,
+        DatabaseError = 41,
     }
 }

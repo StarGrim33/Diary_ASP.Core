@@ -124,11 +124,38 @@ namespace FonTech.Application.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Такая роль уже есть.
+        /// </summary>
+        internal static string RoleAlreadyExist {
+            get {
+                return ResourceManager.GetString("RoleAlreadyExist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Роль не найдена.
+        /// </summary>
+        internal static string RoleNotFound {
+            get {
+                return ResourceManager.GetString("RoleNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Пользователь уже существует.
         /// </summary>
         internal static string UserAlreadyExist {
             get {
                 return ResourceManager.GetString("UserAlreadyExist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Такая роль у пользователя уже есть.
+        /// </summary>
+        internal static string UserAlreadyHasRole {
+            get {
+                return ResourceManager.GetString("UserAlreadyHasRole", resourceCulture);
             }
         }
         

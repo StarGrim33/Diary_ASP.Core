@@ -14,13 +14,14 @@ namespace FonTech.Application.DependencyInjection
     {
         public static void AddApplication(this IServiceCollection services)
         {
-            services.AddAutoMapper(typeof(ReportMapping));
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             InitServices(services);
         }
 
         private static void InitServices(this IServiceCollection services)
         {
             services.AddScoped<IReportValidator, ReportValidator>();
+            services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<IValidator<CreateReportDto>, CreateReportValidator>();
             services.AddScoped<IValidator<UpdateReportDto>, UpdateReportValidator>();
             services.AddScoped<IReportService, ReportService>();

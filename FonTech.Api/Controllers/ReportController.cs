@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FonTech.Api.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     [ApiController]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
@@ -135,7 +135,7 @@ namespace FonTech.Api.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         /// <remarks>
-        /// Request for create report
+        /// Request for delete report
         /// 
         ///     POST
         ///     {

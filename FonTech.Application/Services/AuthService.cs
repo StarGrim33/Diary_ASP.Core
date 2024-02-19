@@ -12,30 +12,36 @@ using Serilog;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using Microsoft.EntityFrameworkCore.Storage;
+using FonTech.Domain.Interfaces.Databases;
+
 
 namespace FonTech.Application.Services
 {
     public class AuthService : IAuthService
     {
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IBaseRepository<User> _userRepository;
         private readonly IBaseRepository<UserToken> _userTokenRepository;
+        private readonly IBaseRepository<Role> _roleRepository;
         private readonly ITokenService _tokenService;
-        private readonly ILogger _logger;
         private readonly IMapper _mapper;
 
-        public AuthService(IBaseRepository<User> userRepository, ILogger logger, IBaseRepository<UserToken> userTokenRepository, IMapper mapper,
-            ITokenService tokenService)
+        public AuthService(IBaseRepository<User> userRepository, IBaseRepository<UserToken> userTokenRepository, IMapper mapper,
+            ITokenService tokenService, IUnitOfWork unitOfWork)
         {
             _userRepository = userRepository;
-            _logger = logger;
             _userTokenRepository = userTokenRepository;
             _mapper = mapper;
             _tokenService = tokenService;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<BaseResult<TokenDto>> Login(LoginUserDto dto)
         {
-            var user = await _userRepository.GetAll().AsNoTracking().FirstOrDefaultAsync(x => x.Login == dto.Login);
+            var user = await _userRepository.GetAll().AsNoTracking()
+                .Include(x => x.Roles)
+                .FirstOrDefaultAsync(x => x.Login == dto.Login);
 
             if (user == null)
             {
@@ -56,12 +62,9 @@ namespace FonTech.Application.Services
             }
 
             var userToken = await _userTokenRepository.GetAll().AsNoTracking().FirstOrDefaultAsync(x => x.Id == user.Id);
-
-            var claims = new List<Claim>()
-                {
-                    new (ClaimTypes.Name, user.Login),
-                    new (ClaimTypes.Role, "User"),
-                };
+            var userRoles = user.Roles;
+            var claims = userRoles.ConvertAll(x => new Claim(ClaimTypes.Role, x.Name));
+            claims.Add(new Claim(ClaimTypes.Name, user.Login));
 
             var accessToken = _tokenService.GenerateAccessToken(claims);
             var refreshToken = _tokenService.GenerateRefreshToken();
@@ -81,7 +84,7 @@ namespace FonTech.Application.Services
             {
                 userToken.RefreshToken = refreshToken;
                 userToken.RefreshTokenExpireTime = DateTime.UtcNow.AddDays(7);
-                await _userTokenRepository.UpdateAsync(userToken);
+                _userTokenRepository.Update(userToken);
             }
 
             return new BaseResult<TokenDto>()
@@ -105,6 +108,7 @@ namespace FonTech.Application.Services
                 };
             }
 
+
             var user = await _userRepository.GetAll().FirstOrDefaultAsync(x => x.Login == dto.Login);
 
             if (user != null)
@@ -117,14 +121,47 @@ namespace FonTech.Application.Services
             }
 
             var hashUserPassword = HashPassword(dto.Password);
-
-            user = new User()
+            
+            await using (var transaction = await _unitOfWork.BeginTransactionAsync())
             {
-                Login = dto.Login,
-                Password = hashUserPassword,
-            };
+                try
+                {
+                    user = new User()
+                    {
+                        Login = dto.Login,
+                        Password = hashUserPassword,
+                    };
 
-            await _userRepository.CreateAsync(user);
+                    await _unitOfWork.Users.CreateAsync(user);
+                    await _unitOfWork.SaveChangesAsync();
+
+                    var role = await _roleRepository.GetAll().AsNoTracking().FirstOrDefaultAsync(x => x.Name == nameof(UserRoles.User));
+
+                    if (role == null)
+                    {
+                        return new BaseResult<UserDto>
+                        {
+                            ErrorMessage = ErrorMessage.RoleNotFound,
+                            ErrorCode = (int)ErrorCode.RoleNotFound,
+                        };
+                    }
+
+                    var userRole = new UserRole()
+                    {
+                        UserId = user.Id,
+                        RoleId = role.Id,
+                    };
+
+                    await _unitOfWork.UserRoles.CreateAsync(userRole);
+
+                    await transaction.CommitAsync();
+                }
+                catch (Exception)
+                {
+
+                    await transaction.RollbackAsync();
+                }
+            }
 
             return new BaseResult<UserDto>()
             {

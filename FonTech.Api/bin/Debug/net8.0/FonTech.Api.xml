@@ -80,7 +80,7 @@
             <param name="id"></param>
             <returns></returns>
             <remarks>
-            Request for create report
+            Request for delete report
             
                 POST
                 {
@@ -110,6 +110,79 @@
             </remarks>
             <response code="200">Если отчет обновился</response>
             <response code="400">Если отчет явно не был обновлен</response>
+        </member>
+        <member name="M:FonTech.Api.Controllers.RoleController.Create(FonTech.Domain.Dto.Role.CreateRoleDto)">
+            <summary>
+            Создание роли
+            </summary>
+            <param name="dto"></param>
+            <remarks>
+            Request for create role
+            
+                POST
+                {
+                    "name": "Report #1",
+                }
+                
+            </remarks>
+            <response code="200">Если роль создалась</response>
+            <response code="400">Если роль явно не была создана</response>
+        </member>
+        <member name="M:FonTech.Api.Controllers.RoleController.Delete(System.Int64)">
+            <summary>
+            Удаление роли
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <remarks>
+            Request for delete role
+            
+                POST
+                {
+                    "id": 1,
+                }
+                
+            </remarks>
+            <response code="200">Если роль удалилась</response>
+            <response code="400">Если роль явно не была удалена</response>
+        </member>
+        <member name="M:FonTech.Api.Controllers.RoleController.Update(FonTech.Domain.Dto.Role.RoleDto)">
+            <summary>
+            Обновление роли с указанием основных свойств
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+            <remarks>
+            Request for update role
+            
+                POST
+                {
+                    "id": 1,
+                    "name": "Admin #1",
+                }
+                
+            </remarks>
+            <response code="200">Если роль обновилась</response>
+            <response code="400">Если роль явно не была обновлена</response>
+        </member>
+        <member name="M:FonTech.Api.Controllers.RoleController.AddRoleForUser(FonTech.Domain.Dto.Role.UserRoleDto)">
+            <summary>
+            Добавление роли пользователю
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+            <remarks>
+            Request for add role to user
+            
+                POST
+                {
+                    "login": "User # 1",
+                    "RoleName": "Admin #1",
+                }
+                
+            </remarks>
+            <response code="200">Если роль добавлена пользователю</response>
+            <response code="400">Если роль не была добавлена</response>
         </member>
         <member name="T:FonTech.Api.Controllers.TokenController">
             <summary>

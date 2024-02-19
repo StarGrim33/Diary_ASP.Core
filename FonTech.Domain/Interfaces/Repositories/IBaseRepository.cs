@@ -1,14 +1,16 @@
 ﻿
+using FonTech.Domain.Interfaces.Databases;
+
 namespace FonTech.Domain.Interfaces.Repositories
 {
-    public interface IBaseRepository<TEntity>
+    public interface IBaseRepository<TEntity> : IStateSaveChangesAsync
     {
         IQueryable<TEntity> GetAll();
 
         Task<TEntity> CreateAsync(TEntity entity);
 
-        Task<TEntity> UpdateAsync(TEntity entity);
+        TEntity Update(TEntity entity);
 
-        Task<TEntity> RemoveAsync(TEntity entity);
+        void Remove(TEntity entity);
     }
 }

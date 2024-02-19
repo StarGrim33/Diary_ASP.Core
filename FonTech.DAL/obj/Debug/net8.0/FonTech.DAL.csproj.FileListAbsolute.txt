@@ -30,3 +30,5 @@ C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Deb
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\refint\FonTech.DAL.dll
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.pdb
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\ref\FonTech.DAL.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\bin\Debug\net8.0\FonTech.DAL.runtimeconfig.json
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.genruntimeconfig.cache
