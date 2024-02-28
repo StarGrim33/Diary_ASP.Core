@@ -26,5 +26,12 @@ namespace FonTech.Domain.Interfaces.Services
         /// <param name="dto"></param>
         /// <returns></returns>
         Task<BaseResult<UserRoleDto>> AddRoleForUserAsync(UserRoleDto dto);
+
+        /// <summary>
+        /// Удаление роли у пользователя
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        Task<BaseResult<UserRoleDto>> DeleteRoleForUserAsync(UserRoleDto dto);
     }
 }

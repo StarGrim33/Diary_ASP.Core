@@ -27,14 +27,17 @@ namespace FonTech.Application.Services
 
         public async Task<BaseResult<UserRoleDto>> AddRoleForUserAsync(UserRoleDto dto)
         {
-            var user = await _userRepository.GetAll().AsNoTracking().FirstOrDefaultAsync(x => x.Login == dto.Login);
+            var user = await _userRepository.GetAll()
+                .Include(x => x.Roles)
+                .AsNoTracking()
+                .FirstOrDefaultAsync(x => x.Login == dto.Login);
 
-            if(user == null)
+            if (user == null)
             {
                 return new BaseResult<UserRoleDto>
                 {
                     ErrorMessage = ErrorMessage.UserNotFound,
-                    ErrorCode = (int) ErrorCode.UserNotFound,
+                    ErrorCode = (int)ErrorCode.UserNotFound,
                 };
             }
 
@@ -45,7 +48,7 @@ namespace FonTech.Application.Services
                 return new BaseResult<UserRoleDto>
                 {
                     ErrorMessage = ErrorMessage.UserAlreadyHasRole,
-                    ErrorCode = (int) ErrorCode.UserAlreadyHasRole,
+                    ErrorCode = (int)ErrorCode.UserAlreadyHasRole,
                 };
             }
 
@@ -56,7 +59,7 @@ namespace FonTech.Application.Services
                 return new BaseResult<UserRoleDto>
                 {
                     ErrorMessage = ErrorMessage.RoleNotFound,
-                    ErrorCode = (int) ErrorCode.RoleNotFound,
+                    ErrorCode = (int)ErrorCode.RoleNotFound,
                 };
             }
 
@@ -102,7 +105,9 @@ namespace FonTech.Application.Services
 
         public async Task<BaseResult<RoleDto>> DeleteRoleAsync(long id)
         {
-            var role = await _roleRepository.GetAll().FirstOrDefaultAsync(x => x.Id == id);
+            var role = await _roleRepository
+                .GetAll()
+                .FirstOrDefaultAsync(x => x.Id == id);
 
             if (role == null)
             {
@@ -119,6 +124,45 @@ namespace FonTech.Application.Services
             return new BaseResult<RoleDto>()
             {
                 Data = _mapper.Map<RoleDto>(role),
+            };
+        }
+
+        public async Task<BaseResult<UserRoleDto>> DeleteRoleForUserAsync(UserRoleDto dto)
+        {
+            var user = await _userRepository.GetAll()
+                .Include(x => x.Roles)
+                .FirstOrDefaultAsync(x => x.Login == dto.Login);
+
+            if (user == null)
+            {
+                return new BaseResult<UserRoleDto>
+                {
+                    ErrorMessage = ErrorMessage.UserNotFound,
+                    ErrorCode = (int)ErrorCode.UserNotFound,
+                };
+            }
+
+            var role = user.Roles.FirstOrDefault(x => x.Name == dto.RoleName);
+
+            if (role == null)
+            {
+                return new BaseResult<UserRoleDto>()
+                {
+                    ErrorMessage = ErrorMessage.RoleNotFound,
+                    ErrorCode = (int)ErrorCode.RoleNotFound,
+                };
+            }
+
+            var userRole = await _userRoleRepository.GetAll()
+               .Where(x => x.RoleId == role.Id)
+               .FirstOrDefaultAsync(x => x.UserId == user.Id);
+            
+            _userRoleRepository.Remove(userRole);
+            await _userRoleRepository.SaveChangesAsync();
+
+            return new BaseResult<UserRoleDto>()
+            {
+                Data = new UserRoleDto(Login: dto.Login, RoleName: dto.RoleName),
             };
         }
 
