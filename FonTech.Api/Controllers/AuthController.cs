@@ -21,7 +21,7 @@ namespace FonTech.Api.Controllers
         /// </summary>
         /// <param name="dto"></param>
         /// <returns></returns>
-        [HttpPost(template:"register")]
+        [HttpPost(template: "register")]
         public async Task<ActionResult<BaseResult<UserDto>>> Register([FromBody] RegisterUserDto dto)
         {
             var response = await _authService.Register(dto);
@@ -39,7 +39,7 @@ namespace FonTech.Api.Controllers
         /// </summary>
         /// <param name="dto"></param>
         /// <returns></returns>
-        [HttpPost(template:"login")]
+        [HttpPost(template: "login")]
         public async Task<ActionResult<BaseResult<TokenDto>>> Login([FromBody] LoginUserDto dto)
         {
             var response = await _authService.Login(dto);

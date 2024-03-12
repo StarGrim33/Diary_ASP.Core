@@ -146,6 +146,13 @@
             <response code="200">Если роль удалилась</response>
             <response code="400">Если роль явно не была удалена</response>
         </member>
+        <member name="M:FonTech.Api.Controllers.RoleController.DeleteRoleForUser(FonTech.Domain.Dto.UserRole.DeleteUserRoleDto)">
+            <summary>
+            Удаление роли пользователя
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
         <member name="M:FonTech.Api.Controllers.RoleController.Update(FonTech.Domain.Dto.Role.RoleDto)">
             <summary>
             Обновление роли с указанием основных свойств
@@ -165,7 +172,13 @@
             <response code="200">Если роль обновилась</response>
             <response code="400">Если роль явно не была обновлена</response>
         </member>
-        <member name="M:FonTech.Api.Controllers.RoleController.AddRoleForUser(FonTech.Domain.Dto.Role.UserRoleDto)">
+        <member name="M:FonTech.Api.Controllers.RoleController.UpdateRoleForUser(FonTech.Domain.Dto.UserRole.UpdateUserRoleDto)">
+            <summary>
+            Обновление роли для пользователя
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FonTech.Api.Controllers.RoleController.AddRoleForUser(FonTech.Domain.Dto.UserRole.UserRoleDto)">
             <summary>
             Добавление роли пользователю
             </summary>

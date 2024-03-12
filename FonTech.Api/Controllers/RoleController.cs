@@ -5,6 +5,8 @@ using FonTech.Domain.Interfaces.Services;
 using FonTech.Domain.Result;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Mime;
+using FonTech.Domain.Dto.UserRole;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FonTech.Api.Controllers
 {
@@ -80,6 +82,26 @@ namespace FonTech.Api.Controllers
 
             return BadRequest(response);
         }
+        
+        /// <summary>
+        /// Удаление роли пользователя
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        [HttpDelete]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<BaseResult<RoleDto>>> DeleteRoleForUser([FromBody] DeleteUserRoleDto dto)
+        {
+            var response = await _roleService.DeleteRoleForUserAsync(dto);
+
+            if (response.IsSuccess)
+            {
+                return Ok(response);
+            }
+
+            return BadRequest(response);
+        }
 
         /// <summary>
         /// Обновление роли с указанием основных свойств
@@ -104,6 +126,26 @@ namespace FonTech.Api.Controllers
         public async Task<ActionResult<BaseResult<UpdateReportDto>>> Update([FromBody] RoleDto dto)
         {
             var response = await _roleService.UpdateRoleAsync(dto);
+
+            if (response.IsSuccess)
+            {
+                return Ok(response);
+            }
+
+            return BadRequest(response);
+        }
+        
+        /// <summary>
+        /// Обновление роли для пользователя
+        /// </summary>
+        /// <returns></returns>
+        [HttpPut(template:"update-role-for-user")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<BaseResult<UpdateUserRoleDto>>> UpdateRoleForUser(
+            [FromBody] UpdateUserRoleDto dto)
+        {
+            var response = await _roleService.UpdateUserRoleAsync(dto);
 
             if (response.IsSuccess)
             {

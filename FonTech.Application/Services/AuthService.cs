@@ -28,13 +28,14 @@ namespace FonTech.Application.Services
         private readonly IMapper _mapper;
 
         public AuthService(IBaseRepository<User> userRepository, IBaseRepository<UserToken> userTokenRepository, IMapper mapper,
-            ITokenService tokenService, IUnitOfWork unitOfWork)
+            ITokenService tokenService, IUnitOfWork unitOfWork, IBaseRepository<Role> roleRepository)
         {
             _userRepository = userRepository;
             _userTokenRepository = userTokenRepository;
             _mapper = mapper;
             _tokenService = tokenService;
             _unitOfWork = unitOfWork;
+            _roleRepository = roleRepository;
         }
 
         public async Task<BaseResult<TokenDto>> Login(LoginUserDto dto)
