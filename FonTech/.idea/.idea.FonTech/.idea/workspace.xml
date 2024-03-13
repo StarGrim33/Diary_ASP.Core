@@ -11,58 +11,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b5c1a0f-2791-4739-9612-102dc99f6ffc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../FonTech.Domain/Dto/UserRole/UpdateUserRoleDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Api/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Api/Controllers/RoleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/Controllers/RoleController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FonTech.Domain/Settings/RabbitMqSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Consumer/DependencyInjection/DependencyInjection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Consumer/RabbitMqListener.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FonTech.Producer/DependencyInjection/DependencyInjection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FonTech.Producer/Interfaces/IMessageProducer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FonTech.Producer/Producer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Api/Controllers/ReportController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/Controllers/ReportController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/FonTech.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/FonTech.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Api/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Api.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Api.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Api.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Api.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Api.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.DAL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.DAL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/FonTech.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/Npgsql.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/Npgsql.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/bin/Debug/net8.0/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/FonTech.Api.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/ref/FonTech.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/ref/FonTech.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/refint/FonTech.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/Debug/net8.0/refint/FonTech.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/FonTech.Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/FonTech.Api.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/FonTech.Api.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/FonTech.Api.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/FonTech.Api.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/FonTech.Api.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Api/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/FonTech.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/FonTech.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Application/Resources/ErrorMessage.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/Resources/ErrorMessage.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Application/Resources/ErrorMessage.resx" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/Resources/ErrorMessage.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Application/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/Services/AuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Application/Services/RoleService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/Services/RoleService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Application/Services/ReportService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/Services/ReportService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Application/bin/Debug/net8.0/FonTech.Application.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/bin/Debug/net8.0/FonTech.Application.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/bin/Debug/net8.0/FonTech.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/bin/Debug/net8.0/FonTech.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/bin/Debug/net8.0/FonTech.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/bin/Debug/net8.0/FonTech.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/bin/Debug/net8.0/FonTech.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/bin/Debug/net8.0/FonTech.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/bin/Debug/net8.0/FonTech.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/bin/Debug/net8.0/FonTech.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.csproj.GenerateResource.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/FonTech.Application.pdb" afterDir="false" />
@@ -70,58 +72,40 @@
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/ref/FonTech.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/ref/FonTech.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/refint/FonTech.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/Debug/net8.0/refint/FonTech.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/FonTech.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/FonTech.Application.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/FonTech.Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/FonTech.Application.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.DAL/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.DAL/FonTech.DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/FonTech.DAL.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.DAL/bin/Debug/net8.0/FonTech.DAL.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/bin/Debug/net8.0/FonTech.DAL.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Application/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.DAL/bin/Debug/net8.0/FonTech.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/bin/Debug/net8.0/FonTech.DAL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.DAL/bin/Debug/net8.0/FonTech.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/bin/Debug/net8.0/FonTech.DAL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.DAL/bin/Debug/net8.0/FonTech.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/bin/Debug/net8.0/FonTech.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.DAL/bin/Debug/net8.0/FonTech.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/bin/Debug/net8.0/FonTech.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/FonTech.DAL.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/ref/FonTech.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/ref/FonTech.DAL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/refint/FonTech.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/Debug/net8.0/refint/FonTech.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/FonTech.DAL.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/FonTech.DAL.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/FonTech.DAL.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/FonTech.DAL.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Domain/Dto/Role/UserRoleDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/Dto/UserRole/UserRoleDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Domain/FonTech.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/FonTech.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Domain/Interfaces/Services/IRoleService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/Interfaces/Services/IRoleService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.DAL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.DAL/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Domain/bin/Debug/net8.0/FonTech.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/bin/Debug/net8.0/FonTech.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Domain/bin/Debug/net8.0/FonTech.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/bin/Debug/net8.0/FonTech.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/FonTech.Domain.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/ref/FonTech.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/ref/FonTech.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/refint/FonTech.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/Debug/net8.0/refint/FonTech.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/FonTech.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/FonTech.Domain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/FonTech.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/FonTech.Domain.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/FonTech/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/FonTech/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/FonTech/FileContentIndex/7a877ef2-155d-4742-acd0-92f502941d96.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/FonTech/FileContentIndex/ae446b47-241e-401d-a2cc-5ca273ec5a30.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/FonTech/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/FonTech/v17/.futdcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/FonTech/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/FonTech/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/fontech.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/fontech.metadata.v7.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/fontech.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/fontech.projects.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FonTech.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../FonTech.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FonTech/.idea/dataSources/ffed5f66-bad8-4914-900e-1e7e1ffdfbe3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FonTech/.idea/dataSources/ffed5f66-bad8-4914-900e-1e7e1ffdfbe3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FonTech/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FonTech/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FonTech.sln" beforeDir="false" afterPath="$PROJECT_DIR$/FonTech.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +136,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/da7e9894ce22ef8cc02e5acc56e95a6f8cf8f644/src/Mvc/Mvc.Core/src/Infrastructure/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a6ca83fd68634bcf88b36fa07a3599b426a020/f0/fe8b6706/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fba9afd29efa49229d2dd911da0bdfedc8e910/01/b9ec46b2/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fba9afd29efa49229d2dd911da0bdfedc8e910/48/f56c507d/CancellationTokenSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fba9afd29efa49229d2dd911da0bdfedc8e910/c7/77b9889d/AsyncTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/13f33536e66d5a3d78fce6544701f4523fe3f6b2b85d082a14cc521e6b68/IConnection.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -163,33 +150,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.FonTech.Api: IIS Express.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.FonTech.Api: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.FonTech.Api: https.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.FonTech.Api: IIS Express.executor": "Run",
+    ".NET Launch Settings Profile.FonTech.Api: http.executor": "Run",
+    ".NET Launch Settings Profile.FonTech.Api: https.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "RabbitMQ",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Влад и Аня\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Влад и Аня\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Влад и Аня\\AppData\\Local\\Symbols\\src&quot;
+    "rider.external.source.directories": [
+      "C:\\Users\\Влад и Аня\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Влад и Аня\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Влад и Аня\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.FonTech.Api: https">
     <configuration name="FonTech.Api: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/../FonTech.Api/FonTech.Api.csproj" />
@@ -274,6 +261,7 @@
       <workItem from="1709744804588" duration="6486000" />
       <workItem from="1710179091275" duration="952000" />
       <workItem from="1710259102063" duration="349000" />
+      <workItem from="1710262651616" duration="4591000" />
     </task>
     <servers />
   </component>
@@ -300,6 +288,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../FonTech.Application/Services/ReportService.cs</url>
+          <line>149</line>
+          <properties documentPath="C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\Services\ReportService.cs" initialLine="142" containingFunctionPresentation="Method 'CreateReportAsync'">
+            <startOffsets>
+              <option value="5387" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5474" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Consumer/RabbitMqListener.cs</url>
+          <line>31</line>
+          <properties documentPath="C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech\Consumer\RabbitMqListener.cs" initialLine="31" containingFunctionPresentation="Lambda expression inside Method 'ExecuteAsync'">
+            <startOffsets>
+              <option value="1044" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1111" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

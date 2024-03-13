@@ -34,3 +34,5 @@ C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\refint\FonTech.Application.dll
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\FonTech.Application.pdb
 C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\obj\Debug\net8.0\ref\FonTech.Application.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\bin\Debug\net8.0\FonTech.Producer.dll
+C:\Users\Влад и Аня\Desktop\C# course\Diary_ASP.Core\FonTech.Application\bin\Debug\net8.0\FonTech.Producer.pdb

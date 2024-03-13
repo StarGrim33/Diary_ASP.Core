@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FonTech.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+642ecdf6e82ec9eb43a52846c2698ddba9c20a7e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2ef6fbfc8513433f51cd9a9c695b87e09253d2d")]
 [assembly: System.Reflection.AssemblyProductAttribute("FonTech.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FonTech.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

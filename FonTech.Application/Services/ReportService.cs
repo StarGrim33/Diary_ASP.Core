@@ -7,8 +7,11 @@ using FonTech.Domain.Interfaces.Repositories;
 using FonTech.Domain.Interfaces.Services;
 using FonTech.Domain.Interfaces.Validations;
 using FonTech.Domain.Result;
+using FonTech.Domain.Settings;
+using FonTech.Producer.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Options;
 using Serilog;
 
 namespace FonTech.Application.Services
@@ -21,9 +24,11 @@ namespace FonTech.Application.Services
         private readonly ILogger _logger;
         private readonly IMapper _mapper;
         private readonly IMemoryCache _memoryCache;
+        private readonly IMessageProducer _messageProducer;
+        private readonly IOptions<RabbitMqSettings> _options;
 
         public ReportService(IBaseRepository<Report> reportRepository, IReportValidator reportValidator,
-            IBaseRepository<User> userRepository, IMapper mapper, ILogger logger, IMemoryCache memoryCache)
+            IBaseRepository<User> userRepository, IMapper mapper, ILogger logger, IMemoryCache memoryCache, IMessageProducer messageProducer, IOptions<RabbitMqSettings> options)
         {
             _reportRepository = reportRepository;
             _userRepository = userRepository;
@@ -31,6 +36,8 @@ namespace FonTech.Application.Services
             _mapper = mapper;
             _logger = logger;
             _memoryCache = memoryCache;
+            _messageProducer = messageProducer;
+            _options = options;
         }
 
         /// <inheritdoc />
@@ -49,7 +56,7 @@ namespace FonTech.Application.Services
                 _memoryCache.Set(userId, reports, TimeSpan.FromMinutes(10));
             }
 
-            if (reports.Length == 0)
+            if (reports is { Length: 0 })
             {
                 _logger.Warning(ErrorMessage.ReportsNotFound, reports.Length);
 
@@ -161,6 +168,8 @@ namespace FonTech.Application.Services
             };
 
             await _reportRepository.CreateAsync(report);
+            await _reportRepository.SaveChangesAsync();
+            _messageProducer.SendMessage(report, _options.Value.RoutingKey, _options.Value.ExchangeName);
 
             return new BaseResult<ReportDto>()
             {
