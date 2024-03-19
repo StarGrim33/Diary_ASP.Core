@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FonTech.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+642ecdf6e82ec9eb43a52846c2698ddba9c20a7e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+156bb0ffe510733d939cacbafc774a86e9dcdb2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("FonTech.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FonTech.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

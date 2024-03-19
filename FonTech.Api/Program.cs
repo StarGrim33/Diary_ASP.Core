@@ -1,7 +1,9 @@
+using Consumer.DependencyInjection;
 using FonTech.Api.Middlewares;
 using FonTech.Application.DependencyInjection;
 using FonTech.DAL.DependencyInjection;
 using FonTech.Domain.Settings;
+using FonTech.Producer.DependencyInjection;
 using Serilog;
 
 namespace FonTech.Api
@@ -19,6 +21,7 @@ namespace FonTech.Api
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.Configure<RabbitMqSettings>(builder.Configuration.GetSection(nameof(RabbitMqSettings))); // Заполнение класса RabbitMqSettings из AppSettings
             builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection(JwtSettings.DefaultSection)); // Заполнение класса JwtSettings из AppSettings
             builder.Services.AddAuthenticationAndAuthorization(builder);
             builder.Services.AddControllers();
@@ -29,6 +32,9 @@ namespace FonTech.Api
 
             builder.Services.AddDataAccessLayer(builder.Configuration);
             builder.Services.AddApplication();
+            builder.Services.AddProducer();
+            builder.Services.AddConsumer();
+            
             AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
             var app = builder.Build();

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FonTech.Api.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    // [Authorize(Roles = "Admin")]
     [ApiController]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
