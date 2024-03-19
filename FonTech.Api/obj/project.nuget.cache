@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Pyjh3ZEERZde0XbLGGtdAMQ2K4b3RWtwczA4IEyoQ25UpDanA64tTASBAxsMQRNe4N9IcHbRWUgmOHO0Rfhxtg==",
+  "dgSpecHash": "b/GRUf8xqhV2smoV9+ILSIxnyBzn0UauRPs+Lt96VGcvc6IRlym6ozTiYgT5Y1I0TS4f+gMRDx4dOjZwFuKsHw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Влад и Аня\\Desktop\\C# course\\Diary_ASP.Core\\FonTech.Api\\FonTech.Api.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.2\\microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.2\\microsoft.entityframeworkcore.design.8.0.2.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.2\\microsoft.entityframeworkcore.relational.8.0.2.nupkg.sha512",
+    "C:\\Users\\Влад и Аня\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.2\\microsoft.entityframeworkcore.tools.8.0.2.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Влад и Аня\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
